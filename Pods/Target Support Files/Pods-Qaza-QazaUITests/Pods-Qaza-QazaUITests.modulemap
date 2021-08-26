@@ -1,0 +1,6 @@
+framework module Pods_Qaza_QazaUITests {
+  umbrella header "Pods-Qaza-QazaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
