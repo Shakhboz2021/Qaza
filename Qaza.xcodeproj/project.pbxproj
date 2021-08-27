@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		54A05CF86BEAB349A7B3857C /* Pods_Qaza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645B94761BF015EBB6E1C392 /* Pods_Qaza.framework */; };
 		B9873E02A3019A29DB192D32 /* Pods_Qaza_QazaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6882A5502F8B8DBA84809D0E /* Pods_Qaza_QazaUITests.framework */; };
+		CE144A4826D7A68E0076AA23 /* UDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE144A4726D7A68E0076AA23 /* UDManager.swift */; };
 		CE9BEFF926D766C800F24AAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9BEFF826D766C800F24AAA /* AppDelegate.swift */; };
 		CE9BEFFB26D766C800F24AAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9BEFFA26D766C800F24AAA /* SceneDelegate.swift */; };
 		CE9BEFFD26D766C800F24AAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9BEFFC26D766C800F24AAA /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 		645B94761BF015EBB6E1C392 /* Pods_Qaza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qaza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6882A5502F8B8DBA84809D0E /* Pods_Qaza_QazaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qaza_QazaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FDA8B621719943EDA48054 /* Pods-Qaza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qaza.debug.xcconfig"; path = "Target Support Files/Pods-Qaza/Pods-Qaza.debug.xcconfig"; sourceTree = "<group>"; };
+		CE144A4726D7A68E0076AA23 /* UDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDManager.swift; sourceTree = "<group>"; };
 		CE9BEFF526D766C800F24AAA /* Qaza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qaza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9BEFF826D766C800F24AAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9BEFFA26D766C800F24AAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,7 +109,6 @@
 				2CED821FCE6FAA4D50732BC8 /* Pods-QazaTests.debug.xcconfig */,
 				FBABB7CE0C3118C4BF31C721 /* Pods-QazaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -119,6 +120,30 @@
 				3EC044B1DD344C7021552391 /* Pods_QazaTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE144A4426D7A5A80076AA23 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CE144A4626D7A5C10076AA23 /* Utils */,
+				CE144A4526D7A5B90076AA23 /* Reusable */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CE144A4526D7A5B90076AA23 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		CE144A4626D7A5C10076AA23 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CE144A4726D7A68E0076AA23 /* UDManager.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		CE9BEFEC26D766C800F24AAA = {
@@ -146,6 +171,7 @@
 		CE9BEFF726D766C800F24AAA /* Qaza */ = {
 			isa = PBXGroup;
 			children = (
+				CE144A4426D7A5A80076AA23 /* Shared */,
 				CE9BEFF826D766C800F24AAA /* AppDelegate.swift */,
 				CE9BEFFA26D766C800F24AAA /* SceneDelegate.swift */,
 				CE9BEFFC26D766C800F24AAA /* ViewController.swift */,
@@ -421,6 +447,7 @@
 				CE9BEFFD26D766C800F24AAA /* ViewController.swift in Sources */,
 				CE9BEFF926D766C800F24AAA /* AppDelegate.swift in Sources */,
 				CE9BF00326D766C800F24AAA /* Qaza.xcdatamodeld in Sources */,
+				CE144A4826D7A68E0076AA23 /* UDManager.swift in Sources */,
 				CE9BEFFB26D766C800F24AAA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
